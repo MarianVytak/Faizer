@@ -1,0 +1,47 @@
+.header {
+    padding: 2.5em 0 1em;
+    background-color: #0e456f;
+}
+
+.header__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header__info_list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 11.5em;
+}
+
+.header__info_list_item {
+    margin-right: 2em;
+    line-height: 1;
+    i {
+        margin-right: 0.5em;
+        font-size: 1.8em;
+        color: $red;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.header__info_list_item_link {
+    font-size: 18px;
+    color: $white;
+    &.tel {
+        font-size: 21px;
+    }
+    &.mail {
+        text-decoration: underline;
+    }
+}
