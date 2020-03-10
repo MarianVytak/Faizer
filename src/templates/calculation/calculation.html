@@ -64,12 +64,50 @@
                 </div>
                 <div class="calculation__grid_item">
                     <div class="calculation__title">ТИП ГРУЗА</div>
-                    <div class="calculation__check"></div>
+                    <div class="calculation__check">
+                        <div class="calculation__check_group">
+                            <label class="check">
+                                <input class="check__input" name="calculation_check_dangerous[]" type="checkbox">
+                                <span class="check__box">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </span>
+                            </label>
+                            <span class="calculation__check_text">Опасный</span>
+                        </div>
+                        <div class="calculation__check_group">
+                            <label class="check">
+                                <input class="check__input" name="calculation_check_temperature[]" type="checkbox">
+                                <span class="check__box">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </span>
+                            </label>
+                            <span class="calculation__check_text">Температурный</span>
+                        </div>
+                    </div>
                     <!-- /.calculation__check -->
                 </div>
                 <div class="calculation__grid_item">
                     <div class="calculation__title">ДОПОЛНИТЕЛЬНО</div>
-                    <div class="calculation__check"></div>
+                    <div class="calculation__check">
+                        <div class="calculation__check_group">
+                            <label class="check">
+                                <input class="check__input" name="calculation_check_insurance[]" type="checkbox">
+                                <span class="check__box">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </span>
+                            </label>
+                            <span class="calculation__check_text">Страхование</span>
+                        </div>
+                        <div class="calculation__check_group">
+                            <label class="check">
+                                <input class="check__input" name="calculation_check_urgently[]" type="checkbox">
+                                <span class="check__box">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </span>
+                            </label>
+                            <span class="calculation__check_text">Срочно</span>
+                        </div>
+                    </div>
                     <!-- /.calculation__check -->
                 </div>
             </div>
@@ -78,22 +116,56 @@
             <div class="calculation__grid_mid">
                 <div class="calculation__grid_item">
                     <div class="calculation__title">ВЕС ГРУЗА</div>
-                    <div class="calculation__weight"></div>
-                <!-- /.calculation__weight -->
+                    <div class="calculation__range">
+                        <div id="calculation__range_weight"></div>
+                        <div class="calculation__range_value">
+                            <span id="calculation__range_weight_value"></span>
+                            <span>тонн</span>
+                        </div>
+                    </div>
+                    <!-- /.calculation__range -->
                 </div>
                 <div class="calculation__grid_item">
                     <div class="calculation__title">ОБЬЕМ ГРУЗА</div>
-                    <div class="calculation__volume"></div>
-                <!-- /.calculation__volume -->
+                    <div class="calculation__range">
+                        <div id="calculation__range_volume"></div>
+                        <div class="calculation__range_value">
+                            <span id="calculation__range_volume_value"></span>
+                            <span>тонн</span>
+                        </div>
+                    </div>
+                    <!-- /.calculation__range -->
                 </div>
             </div>
             <!-- /.calculation__grid_mid -->
 
             <div class="calculation__grid_bot">
-                <div class="calculation__grid_item"></div>
-                <div class="calculation__grid_item"></div>
-                <div class="calculation__grid_item"></div>
-                <div class="calculation__grid_item"></div>
+                <div class="calculation__grid_item">
+                    <div class="calculation__input">
+                        <input type="text" placeholder="Ваше имя" required>
+                    </div>
+                </div>
+                <div class="calculation__grid_item">
+                    <div class="calculation__input">
+                        <input type="tel" placeholder="Телефон" required>
+                    </div>
+                </div>
+                <div class="calculation__grid_item">
+                    <div class="calculation__check_group">
+                        <label class="check">
+                            <input class="check__input" name="calculation_check_accepted[]" type="checkbox">
+                            <span class="check__box">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </span>
+                        </label>
+                        <span class="calculation__check_accpt">
+                            Согласие на обработку <br> персональных данных
+                        </span>
+                    </div>
+                </div>
+                <div class="calculation__grid_item">
+                    <button class="btn btn-lg btn-main">отправить рассчет</button>
+                </div>
             </div>
             <!-- /.calculation__grid_bot -->
 

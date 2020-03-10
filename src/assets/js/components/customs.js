@@ -1,4 +1,4 @@
-$(function () {
+$(function() {
 
     'use strict';
 
@@ -30,6 +30,45 @@ $(function () {
         let thisListLink = $(this).attr('data-target');
         $(thisListLink).children().children().removeClass('active');
         $(this).addClass('active');
+    });
+
+
+
+    let rangeWeight = document.getElementById('calculation__range_weight'),
+        rangeVolume = document.getElementById('calculation__range_volume'),
+        rangeWeightValue = $('#calculation__range_weight_value'),
+        rangeVolumeValue = $('#calculation__range_volume_value');
+
+    noUiSlider.create(rangeWeight, {
+        start: 10,
+        connect: [true, false],
+        range: {
+            'min': 0,
+            'max': 20
+        },
+        format: wNumb({
+            decimals: 0,
+        })
+    });
+
+    rangeWeight.noUiSlider.on('update', function() {
+        rangeWeightValue.text(rangeWeight.noUiSlider.get());
+    });
+
+    noUiSlider.create(rangeVolume, {
+        start: 10,
+        connect: [true, false],
+        range: {
+            'min': 0,
+            'max': 20
+        },
+        format: wNumb({
+            decimals: 0,
+        })
+    });
+
+    rangeVolume.noUiSlider.on('update', function() {
+        rangeVolumeValue.text(rangeVolume.noUiSlider.get());
     });
 
 

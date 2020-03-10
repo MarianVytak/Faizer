@@ -3,8 +3,10 @@
 }
 
 .calculation__form {
+    position: relative;
+    transform: translateY(-50%);
     padding: 4em 3.2em;
-    backface-visibility: 3px;
+    border-radius: 3px;
     box-shadow: 0 2px 90px rgba(40, 40, 40, 0.59);
     background-color: $white;
     z-index: 2;
@@ -25,8 +27,10 @@
 
 .calculation__grid_bot {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 0.6fr auto;
     grid-gap: 3em;
+    margin-top: 5em;
+    align-items: center;
 }
 
 .calculation__title {
@@ -57,7 +61,7 @@
     padding: 0 1em 0 3.5em;
     box-sizing: border-box;
     border-radius: 3px;
-    border: 1px solid #c7c7c7;
+    border: 1px solid $gray;
     &.active {
         .calculation__route_dropdown_link_arrow {
             transform: rotate(180deg);
@@ -85,11 +89,11 @@
     width: 100%;
     box-sizing: border-box;
     border-radius: 3px;
-    border: 1px solid #c7c7c7;
+    border: 1px solid $gray;
 }
 
 .calculation__route_dropdown_list_item {
-    border-bottom: 1px solid #c7c7c7;
+    border-bottom: 1px solid $gray;
     &:last-child {
         border: none;
     }
@@ -117,12 +121,54 @@
     }
 }
 
-.calculation {}
+.calculation__check_group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-right: 5em;
+}
 
-.calculation {}
+.calculation__check {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+}
 
-.calculation {}
+.calculation__check_text {
+    font-weight: bold;
+    font-size: 16px;
+}
 
-.calculation {}
+.calculation__range_value {
+    padding-top: 1em;
+    font-weight: bold;
+    font-size: 1.6em;
+    color: #282828;
+}
 
-.calculation {}
+.calculation__check_accpt {
+    font-size: 1.2em;
+}
+
+.calculation__input {
+    width: 100%;
+    height: 6em;
+    padding: 0 1em 0 3.5em;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid $gray;
+    input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        font-weight: bold;
+        font-size: 1.6em;
+        color: #9a9a9a;
+        &::placeholder {
+            color: #9a9a9a;
+        }
+    }
+}
