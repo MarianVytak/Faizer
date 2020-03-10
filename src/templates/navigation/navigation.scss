@@ -1,0 +1,27 @@
+.navigation {
+    position: sticky;
+    top: 0;
+    padding: 1.5em 0 2.5em;
+    background-color: #0e456f;
+    z-index: 5;
+}
+
+.navigation__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navigation__link {
+    position: relative;
+    margin-right: 2.5em;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    color: #4299ba;
+    &:last-child {
+        margin-right: 0;
+    }
+    &:hover {
+        color: $white;
+    }
+}
