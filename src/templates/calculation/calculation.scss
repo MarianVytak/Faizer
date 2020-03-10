@@ -1,0 +1,128 @@
+.calculation {
+    position: relative;
+}
+
+.calculation__form {
+    padding: 4em 3.2em;
+    backface-visibility: 3px;
+    box-shadow: 0 2px 90px rgba(40, 40, 40, 0.59);
+    background-color: $white;
+    z-index: 2;
+}
+
+.calculation__grid_top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3em;
+}
+
+.calculation__grid_mid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+    margin-top: 4em;
+}
+
+.calculation__grid_bot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3em;
+}
+
+.calculation__title {
+    margin-bottom: 1.5em;
+    font-weight: bold;
+    font-size: 1.6em;
+    color: $main;
+    text-transform: uppercase;
+}
+
+.calculation__route {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calculation__route_dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.calculation__route_dropdown_link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 6em;
+    padding: 0 1em 0 3.5em;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #c7c7c7;
+    &.active {
+        .calculation__route_dropdown_link_arrow {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.calculation__route_dropdown_link_text {
+    font-weight: bold;
+    font-size: 1.6em;
+    color: #9a9a9a;
+}
+
+.calculation__route_dropdown_link_arrow {
+    font-size: 2em;
+    color: $main;
+    transition: all .3s;
+}
+
+.calculation__route_dropdown_list {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 6.1em;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #c7c7c7;
+}
+
+.calculation__route_dropdown_list_item {
+    border-bottom: 1px solid #c7c7c7;
+    &:last-child {
+        border: none;
+    }
+}
+
+.calculation__route_dropdown_list_item_link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 4em;
+    padding: 0 1em 0 3.5em;
+    background-color: $white;
+    font-weight: bold;
+    color: #9a9a9a;
+    span {
+        font-size: 1.6em;
+    }
+    &:hover {
+        background-color: $main;
+        color: $white;
+    }
+    &.active {
+        background-color: $main;
+        color: $white;
+    }
+}
+
+.calculation {}
+
+.calculation {}
+
+.calculation {}
+
+.calculation {}
+
+.calculation {}
