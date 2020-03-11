@@ -11,7 +11,16 @@
   grid-gap: 3em;
 }
 
-.section-3__list {}
+.section-3__list {
+  &.half {
+    .section-3__list_item {
+      height: 10.66em;
+      &:first-child {
+        height: 17em;
+      }
+    }
+  }
+}
 
 .section-3__list_item {
   position: relative;
