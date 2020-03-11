@@ -1,0 +1,22 @@
+.section-6 {
+  padding: 8em 0 7em;
+}
+
+.section-6__grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 4em;
+}
+
+.section-6__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-6__list_item {
+  margin-right: 5em;
+  &:last-child {
+    margin-right: 0;
+  }
+}
