@@ -1,0 +1,43 @@
+.footer {
+  background-color: rgba(16, 39, 95, 0.94);
+}
+
+.footer__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5em 0;
+  border-top: 1px solid #5474c0;
+}
+
+.footer__left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer__logo {
+  width: 13.5em;
+  margin-right: 4em;
+}
+
+.footer__desc {
+  font-weight: 100;
+  font-size: 1.8em;
+  color: #5474c0;
+}
+
+.footer__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer__list_item {
+  margin-right: 1.5em;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__list_item_link {}
