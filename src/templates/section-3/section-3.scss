@@ -1,0 +1,38 @@
+.section-3 {
+  padding: 6em 0 4.5em;
+  background-image: url(../../assets/img/bg/section-3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.section-3__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3em;
+}
+
+.section-3__list {}
+
+.section-3__list_item {
+  position: relative;
+  height: 17em;
+  margin-bottom: 2em;
+  padding: 2.5em;
+  box-sizing: border-box;
+  background-color: $white;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.section-3__list_item_title {
+  font-weight: bold;
+  font-size: 1.7em;
+  text-transform: uppercase;
+}
+
+.section-3__list_item_icon {
+  position: absolute;
+  bottom: 2em;
+  right: 3em;
+}
