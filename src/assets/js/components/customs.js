@@ -3,6 +3,18 @@ $(function() {
     'use strict';
 
 
+    // Navigation anchors
+    $('.js-anchor').on('click', function(e){
+        e.preventDefault();
+
+        let navScroll = $(this).attr('href'),
+            navScrollBlock = $(navScroll).offset().top;
+        $('html, body').animate({
+            scrollTop: navScrollBlock
+        }, 2000);
+    });
+
+
     // Calculation dropdown
     let dropdownLink = $('.calculation__route_dropdown_link'),
         dropdownList = $('.calculation__route_dropdown_list'),
@@ -34,6 +46,7 @@ $(function() {
 
 
 
+    // Range slider
     let rangeWeight = document.getElementById('calculation__range_weight'),
         rangeVolume = document.getElementById('calculation__range_volume'),
         rangeWeightValue = $('#calculation__range_weight_value'),
