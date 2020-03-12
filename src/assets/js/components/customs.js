@@ -163,5 +163,14 @@ $(function() {
     });
 
 
+    // Services mobile
+    let s3Item = $('.js-s3-list-item');
+    s3Item.on('click', function (e) {
+        e.preventDefault();
+        let s3Items = $(this).attr('data-target');
+        $(s3Items).slideToggle();
+    });
+
+
 
 });
