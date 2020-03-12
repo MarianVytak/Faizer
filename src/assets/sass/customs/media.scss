@@ -259,6 +259,31 @@
     }
 
     // Section 2
+    .section-2 {
+        margin-top: 0;
+        padding: 3em 0;
+    }
+    .section-2__title {
+        font-size: 2em;
+    }
+    .section-2__grid_list {
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+    }
+    .section-2__card {
+        height: 8em;
+        padding: 1em;
+    }
+    .section-2__card_title {
+        font-size: 1.4em;
+    }
+    .section-2__card_icon {
+        bottom: 1em;
+        right: 1em;
+        i {
+            font-size: 2em;
+        }
+    }
 
     // Section 3
 
@@ -272,7 +297,6 @@
 
 }
 
-.section-2,
 .section-3,
 .section-4,
 .section-5,
