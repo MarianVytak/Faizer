@@ -368,10 +368,28 @@
     .section-7__grid_right {
         display: none;
     }
+    .section-7__form {
+        margin-top: 3em;
+    }
 
-}
+    // Footer
+    .footer__block {
+        flex-wrap: wrap;
+        padding: 1em 0;
+    }
+    .footer__left {
+        flex-wrap: wrap;
+    }
+    .footer__logo {
+        width: 18em;
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+    .footer__desc {
+        font-size: 1.4em;
+    }
+    .footer__list {
+        margin-top: 1em;
+    }
 
-.footer,
-{
-    display: none;
 }
