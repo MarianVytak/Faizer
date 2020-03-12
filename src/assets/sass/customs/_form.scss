@@ -5,9 +5,7 @@
     margin-bottom: 0;
   }
 }
-.label {
-  font-size: 16px;
-  color: $white;
+label {
   &.form__input_error,
   &.form__input_success {
     position: absolute;
@@ -22,6 +20,10 @@
   &.form__input_success {
     color: green;
   }
+}
+.label {
+  font-size: 16px;
+  color: $white;
 }
 .input {
   width: 100%;
