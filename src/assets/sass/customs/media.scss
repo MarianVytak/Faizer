@@ -321,6 +321,29 @@
     }
 
     // Section 5
+    .section-5 {
+        padding: 3em 0;
+    }
+    .section-5__list {
+        flex-wrap: wrap;
+    }
+    .section-5__list {
+        margin: 0 -1em;
+        padding-top: 0;
+    }
+    .section-5__list_item {
+        width: 50%;
+        margin-right: 0;
+        padding: 1em;
+        box-sizing: border-box;
+    }
+    .section-5__list_item_count {
+        transform: translateX(-50%);
+        font-size: 1.4em;
+    }
+    .section-5__list_item_label {
+        margin-top: 0.3em;
+    }
 
     // Section 6
 
@@ -328,7 +351,6 @@
 
 }
 
-.section-5,
 .section-6,
 .section-7,
 .footer,
