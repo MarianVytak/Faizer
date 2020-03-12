@@ -190,6 +190,9 @@
     .btn {
         font-size: 1em;
     }
+    .h2 {
+        font-size: 3em;
+    }
     
     // Header
     .header__logo {
@@ -286,6 +289,18 @@
     }
 
     // Section 3
+    .section-3 {
+        padding: 3em 0;
+    }
+    .section-3__list_item {
+        margin-bottom: 1em;
+        padding: 1em;
+    }
+    .section-3__list_item_icon {
+        bottom: 1em;
+        right: 1em;
+        max-width: 4em;
+    }
 
     // Section 4
 
@@ -297,7 +312,6 @@
 
 }
 
-.section-3,
 .section-4,
 .section-5,
 .section-6,
