@@ -359,10 +359,18 @@
     }
 
     // Section 7
+    .section-7 {
+        padding: 3em 0;
+    }
+    .section-7__grid {
+        grid-template-columns: 1fr;
+    }
+    .section-7__grid_right {
+        display: none;
+    }
 
 }
 
-.section-7,
 .footer,
 {
     display: none;
