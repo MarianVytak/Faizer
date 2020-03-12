@@ -303,6 +303,22 @@
     }
 
     // Section 4
+    .section-4 {
+        padding: 3em 0 0;
+    }
+    .section-4__block {
+        padding: 2em;
+    }
+    .section-4__block_grid {
+        grid-template-columns: 1fr;
+        padding: 2em 0 3em;
+    }
+    .section-4__block_grid_left {
+        padding-left: 3em;
+    }
+    .section-4__block_grid_right {
+        padding-left: 3em;
+    }
 
     // Section 5
 
@@ -312,7 +328,6 @@
 
 }
 
-.section-4,
 .section-5,
 .section-6,
 .section-7,
