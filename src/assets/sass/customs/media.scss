@@ -346,12 +346,22 @@
     }
 
     // Section 6
+    .section-6 {
+        padding: 0 0 2em;
+    }
+    .section-6__list {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .section-6__list_item {
+        margin-right: 1em;
+        margin-bottom: 1em;
+    }
 
     // Section 7
 
 }
 
-.section-6,
 .section-7,
 .footer,
 {
